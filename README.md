@@ -1,3 +1,3 @@
-# auto-upwork-job-applier
+# UpWork Job Applier
 
 Dead simple job application for UpWork. Load your profile, auto-fill job postings from browser. Powered by LangChain and LLM's.
