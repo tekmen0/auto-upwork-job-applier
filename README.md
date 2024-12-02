@@ -1,6 +1,6 @@
 # UpWork Job Applier
 
-Dead simple job application for UpWork. Load your profile, auto-fill job postings from chrome extension.
+Dead simple job application for UpWork. Load your profile and auto-fill job postings from chrome extension.
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Node.js](https://img.shields.io/badge/Node.js-16%2B-green)](https://nodejs.org/)
@@ -8,7 +8,9 @@ Dead simple job application for UpWork. Load your profile, auto-fill job posting
 [![Webpack](https://img.shields.io/badge/Webpack-5-blueviolet)](https://webpack.js.org/)
 [![Chrome Extension](https://img.shields.io/badge/Chrome%20Extension-v3-orange)](https://developer.chrome.com/docs/extensions/mv3/)
 
-### Contributon
+
+### Important Docs :
+[Contribution](docs/contribution_main.md)
 
 
 ### ToDo :
