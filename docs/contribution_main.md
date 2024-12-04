@@ -1,5 +1,10 @@
 
-# Directory Structure
+# Follow these steps for contribution :
+
+# Pages : 
+
+
+# Directory Structure : 
 
 ```
 upwork-job-applier/
