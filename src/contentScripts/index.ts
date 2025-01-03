@@ -29,9 +29,11 @@ import { setupApp } from '~/logic/common-setup'
   app.mount(root)
 })()
 
-// chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-//  if (request.action === 'getTabHTML') {
-//    const html = document.documentElement.outerHTML
-//    sendResponse({ html })
-//  }
-// })
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  console.log('getting html..')
+  if (request.action === 'getTabHTML') {
+    console.log('getting html...')
+    const html = document.documentElement.outerHTML
+    sendResponse({ html })
+  }
+})

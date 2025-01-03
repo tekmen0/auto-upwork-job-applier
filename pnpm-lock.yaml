@@ -14,6 +14,9 @@ importers:
       '@langchain/groq':
         specifier: ^0.1.2
         version: 0.1.2(@langchain/core@0.3.19(openai@4.74.0(zod@3.23.8)))
+      eld:
+        specifier: ^1.0.1
+        version: 1.0.1
       langchain:
         specifier: ^0.3.6
         version: 0.3.6(@langchain/core@0.3.19(openai@4.74.0(zod@3.23.8)))(@langchain/groq@0.1.2(@langchain/core@0.3.19(openai@4.74.0(zod@3.23.8))))(openai@4.74.0(zod@3.23.8))
@@ -1917,6 +1920,9 @@ packages:
     resolution: {integrity: sha512-L9Qe08KWTlqYMVvMcTIvMAdl1cDUubzRNYL+WfA4bLDMHe4nemKkpmYzkznE1FwLKu0EEmy6obgQKzMJrg4x9Q==}
     engines: {node: '>=14'}
     hasBin: true
+
+  eld@1.0.1:
+    resolution: {integrity: sha512-+6BuR0EY2CsUZZGgGfOhV5iq9b7HdhwqwvxkdcxI+w/Mr3P22ic9VuxYnPkwh2HZNJC23wPI4pIYe+hKEbiyYA==}
 
   electron-to-chromium@1.5.13:
     resolution: {integrity: sha512-lbBcvtIJ4J6sS4tb5TLp1b4LyfCdMkwStzXPyAgVgTRAsep4bvrAGaBOP7ZJtQMNJpSQ9SqG4brWOroNaQtm7Q==}
@@ -6718,6 +6724,8 @@ snapshots:
       commander: 10.0.1
       minimatch: 9.0.1
       semver: 7.6.3
+
+  eld@1.0.1: {}
 
   electron-to-chromium@1.5.13: {}
 

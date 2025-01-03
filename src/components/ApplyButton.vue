@@ -1,8 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 import { ChatGroq } from '@langchain/groq'
-import { HumanMessage, SystemMessage } from '@langchain/core/messages'
 import { ChatPromptTemplate } from '@langchain/core/prompts'
+
+import { extractFormQuestions } from '../contentScripts/form-extractor'
 
 // Reference to the response
 const response = ref('')
@@ -22,10 +23,21 @@ const promptTemplate = ChatPromptTemplate.fromMessages([
 ])
 
 async function askLlama() {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
+  if (!tab?.id)
+    return
+  // Inject content script
+  await chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    func: extractFormQuestions, // Directly use the function reference
+  })
+
+  // Preprocess the HTML to extract form questions
   const promptValue = await promptTemplate.invoke({
     language: 'turkish',
     text: 'hi',
   })
+
   try {
     const res = await llm.invoke(promptValue.toChatMessages())
     response.value = res.content

@@ -30,6 +30,12 @@
     "postinstall": "simple-git-hooks",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@langchain/core": "^0.3.19",
+    "@langchain/groq": "^0.1.2",
+    "eld": "^1.0.1",
+    "langchain": "^0.3.6"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.0",
     "@ffflorian/jszip-cli": "^3.7.1",
@@ -75,10 +81,5 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
-  },
-  "dependencies": {
-    "@langchain/core": "^0.3.19",
-    "@langchain/groq": "^0.1.2",
-    "langchain": "^0.3.6"
   }
 }
